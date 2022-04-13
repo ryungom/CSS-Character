@@ -1,0 +1,59 @@
+@import url("/css/reset.css");
+
+main {
+  width:800px; height:800px;
+  position:relative;
+  left:50%; transform:translateX(-50%);
+  top:100px;
+  background:red;
+  box-sizing:border-box;
+}
+
+.face_ears>div {
+  width:250px; height:200px;
+  background:#ffe0cc;
+  
+  position:absolute;
+  
+  border:10px solid #d4a78c;
+}
+.face_ears>div:nth-child(1) {
+  border-radius:114px 84px 125px 100px;
+  transform:rotate(-104deg);
+  top:350px; left:-53px;
+}
+.face_ears>div:nth-child(2) {
+  border-radius:100px 125px 84px 114px;
+  transform:rotate(104deg);
+  top:350px; right:-53px;
+}
+
+
+.face {
+  background:#ffe0cc;
+  width:600px; height:500px;
+  border-radius:30px 30px 250px 250px;
+  border:10px solid #d4a78c;
+  position:absolute; left:50%; top:25%;
+  transform:translateX(-50%);
+}
+
+.glasses {
+  width:250px; height:250px; background:#fff;
+  position:absolute; top:80px; 
+  border-radius:175px; opacity:0.5;
+  border:10px solid #555; box-sizing:border-box;
+}
+.glasses.left {left:20px;}
+.glasses.right {right:20px;}
+
+.glasses_line {
+  width:90px; height:90px; background:#555;
+  position:absolute; left:50%; transform:translateX(-50%);
+  top:180px;
+}
+.glasses_line::after {display:inline-block;
+  width:190px; height:190px; background:#ffe0cc;
+  position:absolute; left:50%; transform:translateX(-50%);
+  top:100px;
+}
